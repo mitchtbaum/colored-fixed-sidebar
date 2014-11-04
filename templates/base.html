@@ -1,0 +1,15 @@
+{% extends "!base/base.html" %}
+
+{% block head %}
+  {{ super() }}
+  {% include '!fixed_sidebar/headers/fixed-sidebar.html' %}
+  {% include '!colored_fixed_sidebar/headers/colored-fixed-sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+  {% block sidebar %}
+    <div id="sidebar" class="pure-u-1-4">
+      {% include '!fixed_sidebar/widgets/sidebar.html' %}
+    </div>
+  {% endblock%}
+{% endblock %}
